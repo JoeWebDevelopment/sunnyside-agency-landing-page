@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+@layer customProperties{
+:root{
+
+
+    --clr-white: #fff;
+    --clr-blk: #000;
+
+    --clr-teal: #90D4c6;
+    --clr-seagreen: #458D7E;
+
+    --clr-darkgray: #24303E;
+    --clr-grey: #5B636D;
+    --clr-slate: #808397;
+    --clr-silver: #A7AAAD;
+
+    --clr-darkblue: #052C3B;
+    --clr-blue: #19536C;
+
+    --clr-red: #FE7766;
+    --clr-yellow: #FAD400;
+
+
+    /* Fonts */
+
+    --ff-barlow: "Barlow",sans-serif; 
+    --ff-fraunces: "Fraunces", sans-serif;
+}
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav{
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    
+}
+
+header{
+}
+
+
+
+.header-image{
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.header-content-container{
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    
+}
+
+.header-content-overlay{
+    position: absolute;
+    z-index: 2;
+    top:0;
+    left: 0;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 5vw, 4rem);
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.logo{
+    max-width: 170px;
+}
+
+.header-title{
+    text-align: center;
+    font-family: var(--ff-fraunces);
+font-size: 56px;
+font-style: normal;
+font-weight: 900;
+line-height: 125%; /* 70px */
+letter-spacing: 9px;
+text-transform: uppercase;
+color: white;
+}
+
+
+
+
+
+.arrow-down{
+    display: block;
+    margin: 0 auto;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 7vw, 8rem);
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
