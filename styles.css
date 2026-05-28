@@ -138,3 +138,51 @@ color: white;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+
+.grid-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.grid-title{
+    font-family: var(--ff-fraunces);
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: 125%;
+color: var(--clr-darkgray);
+}
+
+.grid-text-content{
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 1rem;
+
+}
+
+.grid-text{
+font-family: var(--ff-barlow);
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 165%;
+color: var(--clr-slate);
+}
+
+.grid-link{
+    font-family: var(--ff-fraunces);
+font-size: 15px;
+font-style: normal;
+font-weight: 900;
+line-height: 165%; /* 24.75px */
+letter-spacing: 1px;
+text-decoration: none;
+}
