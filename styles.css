@@ -282,6 +282,11 @@ position: relative;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+      inset-inline: 0;
+  bottom: 0;
+  align-items: center;
+  padding-inline: 1.5rem;
+  padding-bottom: clamp(2rem, 7vw, 3.5rem);
 }
 
 .grid-title-overlay{
@@ -503,7 +508,9 @@ footer{
 
 @media (max-width: 600px){
 
-
+.text-box{
+    padding: 1.5rem;
+}
      
     .header-title{        
 font-size: 42px;
@@ -521,3 +528,4 @@ font-weight: 900;
 line-height: 125%;
     }
 }
+
