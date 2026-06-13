@@ -483,7 +483,7 @@ footer{
     .grid-section{
         grid-template-columns: 1fr;
     }
-    .grid-box img{
+    .grid-box img, .grid-box picture{
         width: 100%;
     }
     .text-box{
